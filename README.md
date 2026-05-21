@@ -1,6 +1,8 @@
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
+## Name: S Madhumitha
+## Reg No: 212225040217
 
 **AIM:**
 
@@ -49,13 +51,42 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+half adder module exp3 ( input wire a, b,
+output wire sum,
+output wire carry)
+~~~
+assign sum   = a ^ b;   
+assign carry = a & b;   
+endmodule
+
+half subracter
+
+module half_subtractor (
+input  wire a, b,         // Inputs
+output wire diff, borrow  // Outputs
+~~~
+
+~~~
+// Logic equations
+assign diff   = a ^ b;     // XOR for difference
+assign borrow = ~a & b;    // Borrow when a < b
+~~~
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by: RegisterNumber:212225040217
 
 **RTL Schematic**
+half adder
+<img width="510" height="252" alt="Screenshot 2026-05-21 113906" src="https://github.com/user-attachments/assets/6f22efc4-d113-45ec-b667-6aef21d83444" />
+half subracter 
+<img width="572" height="238" alt="Screenshot 2026-05-21 113916" src="https://github.com/user-attachments/assets/1663a9ce-2da4-4fea-a81a-4899ccbc977d" />
 
 **Output/TIMING Waveform**
+half adder
+<img width="1274" height="551" alt="Screenshot 2026-05-21 113938" src="https://github.com/user-attachments/assets/52df6c32-b764-4265-ba43-d6c8ea2cdcdd" />
+half subracter 
+<img width="1270" height="614" alt="Screenshot 2026-05-21 114000" src="https://github.com/user-attachments/assets/8f230317-0de4-48fb-bf78-f7774875568e" />
 
 **Result:**
+This Program was excecuted successfully.
